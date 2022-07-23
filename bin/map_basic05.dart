@@ -6,11 +6,12 @@ Then return the map.
 
 */
 
-Map func() {
-  Map data = {1: 'Shirinboyev', 2: 'Gayrat'};
+Map func(Map dct) {
+  Map data = {};
+  data['Gayrat'] = 'Shirinboyev';
   return data;
 }
 
 void main() {
-  print(func());
+  print(func({}));
 }
