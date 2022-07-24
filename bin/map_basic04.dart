@@ -7,21 +7,49 @@ Return list_to_map variable
 
 */
 
-Map func(List lst1, List lst2) {
-  Map data = {};
-  //your code here
-  data[lst1[0]] = lst2[0];
-  data[lst1[1]] = lst2[1];
-  data[lst1[2]] = lst2[2];
-  data[lst1[3]] = lst2[3];
-  data[lst1[4]] = lst2[4];
-  data[lst1[5]] = lst2[5];
-  data.length;
+// Map func(List a, List d) {
+//   Map data = {};
+//   //your code here
+//   data[a[0]] = d[0];
+//   data[a[1]] = d[1];
+//   data[a[2]] = d[2];
+//   data[a[3]] = d[3];
+//   data[a[4]] = d[4];
+//   while (a == d) {
 
-  return data;
-}
+//   }
+//   data.length;
+
+//   return data;
+// }
+
+// void main() {
+//   print(func([
+//     1,
+//     2,
+//     3,
+//     4,
+//     5,
+//     6
+//   ], [
+//     'one',
+//     'two',
+//     'three',
+//     'four',
+//     'five',
+//   ]));
+// }
 
 void main() {
-  print(func(
-      [1, 2, 3, 4, 5, 6], ['one', 'two', 'three', 'four', 'wruiseos', 'asdf']));
+  print(func([1, 2, 3, 4], ['one', 'two', 'three', 'four']));
+}
+
+Map func(List lst1, List lst2) {
+  int i = 0;
+  Map data = {};
+  while (i < lst1.length) {
+    data[lst1[i]] = lst2[i];
+    i++;
+  }
+  return data;
 }
